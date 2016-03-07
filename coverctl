@@ -1,0 +1,9 @@
+#!/bin/bash
+ERL=/usr/local/bin/erl
+
+start ()
+{
+	bash ${ERL} -pa ./ebin -sname cover@localhost -s cover_test start
+}
+
+start
